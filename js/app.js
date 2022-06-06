@@ -2,15 +2,13 @@ let names = [];
 let result = [];
 
 function NamesandBills() {
-  if (
     document.getElementById("InputName").value !== "" &&
     document.getElementById("InputBills").value !== ""
-  ) {
-    dataCollection();
-  } else {
+  ?
+    dataCollection()
+  :
     document.getElementById("half").innerText =
       "Por favor, rellene todos los campos del formulario o ingrese un valor valido.";
-  }
 }
 function dataCollection() {
   let nameValue = document.getElementById("InputName").value;
