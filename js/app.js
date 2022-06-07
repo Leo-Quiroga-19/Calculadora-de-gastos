@@ -7,7 +7,7 @@ function namesAndBills() {
   ?
     dataCollection()
   :
-    document.getElementById("half").innerText =
+    document.getElementById("half").textContent =
       "Por favor, rellene todos los campos del formulario o ingrese un valor valido.";
 }
 function dataCollection() {
@@ -28,14 +28,14 @@ function imprMembers(name, price) {
 function imprFunction(text) {
   const h4 = document.createElement("h4");
   const imprPant = document.getElementById("displayresult");
-  h4.innerText = text;
+  h4.textContent = text;
   imprPant.append(h4);
 }
 function finalValue() {
   let { valueResult, valueHalf } = valueFunction();
-  document.getElementById("finalResult").innerText =
+  document.getElementById("finalResult").textContent =
     "Total: " + valueResult + " $";
-  document.getElementById("half").innerText =
+  document.getElementById("half").textContent =
     "A cada uno le toca aportar: " + valueHalf + " $";
 }
 function valueFunction() {
