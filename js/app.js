@@ -1,7 +1,7 @@
 let names = [];
 let result = [];
 
-function NamesandBills() {
+function namesAndBills() {
     document.getElementById("InputName").value !== "" &&
     document.getElementById("InputBills").value !== ""
   ?
